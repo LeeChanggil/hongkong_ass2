@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.my.MainActivity">
+
+    <ImageView
+        android:src="@drawable/kim3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/pic2"
+        android:layout_marginTop="234dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2point"
+        android:id="@+id/b_t1_2"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="142dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3point"
+        android:id="@+id/b_t1_3"
+        android:layout_alignTop="@+id/b_t2_3"
+        android:layout_alignStart="@+id/b_t1_2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3point"
+        android:id="@+id/b_t2_3"
+        android:layout_marginEnd="23dp"
+        android:layout_above="@+id/b_t2_2"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2point"
+        android:id="@+id/b_t2_2"
+        android:layout_marginRight="22dp"
+        android:layout_alignTop="@+id/b_t1_2"
+        android:layout_alignStart="@+id/b_t2_3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:id="@+id/b_t1_f"
+        android:layout_below="@+id/b_t1_2"
+        android:layout_alignStart="@+id/b_t1_2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free throw"
+        android:id="@+id/b_t2_f"
+        android:layout_alignTop="@+id/b_t1_f"
+        android:layout_alignEnd="@+id/b_t2_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000"
+        android:textSize="40sp"
+        android:id="@+id/t1"
+        android:layout_above="@+id/b_t1_3"
+        android:layout_toEndOf="@+id/b_t1_f" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0000ff"
+        android:textSize="40sp"
+        android:id="@+id/t2"
+        android:layout_above="@+id/b_t2_3"
+        android:layout_toStartOf="@+id/b_t2_f" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=":"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/t1"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
